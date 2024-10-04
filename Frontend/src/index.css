@@ -1,0 +1,163 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9ecef;
+  color: #343a40;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: #343a40;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Math Quiz Styles */
+.math-quiz {
+  margin-bottom: 20px;
+}
+
+.math-quiz h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.math-quiz h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.math-quiz h3 {
+  margin-top: 10px;
+  color: #ff6347;
+}
+
+.math-quiz form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.math-quiz form input {
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  transition: border-color 0.3s ease;
+}
+
+.math-quiz form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.math-quiz form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.math-quiz form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* incorrect answer feedback */
+.math-quiz p.error-message {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Leaderboard Table Styles */
+.leaderboard {
+  margin-top: 20px;
+}
+
+.leaderboard h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #007bff;
+  text-align: center;
+}
+
+.leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.leaderboard th,
+.leaderboard td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.leaderboard th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.leaderboard tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.leaderboard tr:hover {
+  background-color: #f1f1f1;
+}
+
+.leaderboard td {
+  font-size: 1rem;
+}
+
+.leaderboard td:nth-child(1) {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .math-quiz form input {
+    width: 100%;
+  }
+
+  .leaderboard table,
+  .leaderboard th,
+  .leaderboard td {
+    font-size: 0.9rem;
+  }
+}
+
+.math-quiz .error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
